@@ -17,3 +17,5 @@ include:
     shield: skeletyl_v2_elitec_left
   - board: nrfmicro_13
     shield: skeletyl_v2_elitec_right
+  - board: nrfmicro_13
+    shield: settings_reset
