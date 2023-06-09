@@ -20,12 +20,25 @@
     tapping-term-ms = <200>;
     flavor = "tap-preferred";
 };
+&lt {
+    quick_tap_ms = <200>;
+    tapping-term-ms = <180>;
+};
 
 &sk {
     release-after-ms = <2000>;
     quick-release;
 };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri_layer {
+            if-layers = <LOWER RAISE>;
+            then-layer = <ADJUST>;
+        };
+    };
+    
 / {
     combos {
         compatible = "zmk,combos";
