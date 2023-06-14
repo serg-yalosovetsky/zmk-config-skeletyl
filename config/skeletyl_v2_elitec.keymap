@@ -171,5 +171,23 @@
               &kp BSPC  &kp SPACE  &kp DEL      &kp RET    &trans  &caps_word
             >;
         };
+
+        layer_6 {
+            bindings = <
+&kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans
+    &trans            &trans      &trans             &trans       &kp C_MUTE    &trans  &trans  &trans  &trans  &trans
+    &trans            &trans      &trans             &trans           &trans    &trans  &trans  &trans  &trans  &trans
+                                  &trans             &trans           &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 };
