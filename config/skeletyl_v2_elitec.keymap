@@ -98,10 +98,10 @@
 
         default_layer {
             bindings = <
-       &hs TAB Q  &kp W     &kp E              &kp R  &hs ESCAPE T          &kp Y                    &kp U      &kp I       &kp O         &hs TAB P
-&hs LEFT_SHIFT A  &kp S     &kp D              &kp F         &kp G          &kp H                    &kp J      &kp K       &kp L    &hm RCTRL SEMI
-     &hm LCTRL Z  &kp X     &kp C              &kp V         &kp B          &kp N                    &kp M  &kp COMMA  &kp PERIOD  &hs RSHIFT SLASH
-                         &kp BSPC  &td LWIN LEFT_ALT  &lt 1 DELETE    &lt 2 ENTER  &td RIGHT_WIN RIGHT_ALT  &kp SPACE
+&kp Q  &kp W     &kp E           &kp R         &kp T          &kp Y         &kp U      &kp I       &kp O                 &kp P
+&kp A  &kp S     &kp D           &kp F         &kp G          &kp H         &kp J      &kp K       &kp L              &kp SEMI
+&kp Z  &kp X     &kp C           &kp V         &kp B          &kp N         &kp M  &kp COMMA  &kp PERIOD  &hs LEFT_SHIFT SLASH
+              &kp BSPC  &lt 4 LEFT_WIN  &lt 1 DELETE    &lt 2 ENTER  &lt 5 ESCAPE  &kp SPACE
             >;
         };
 
@@ -125,10 +125,28 @@
 
         adjust_layer {
             bindings = <
-  &bt BT_CLR         &none         &none         &none         &none    &kp N7  &kp N8   &kp N9   &kp FSLH   &kp STAR
+  &bt BT_CLR        &trans        &trans        &trans        &trans    &kp N7  &kp N8   &kp N9   &kp FSLH   &kp STAR
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp N4  &kp N5   &kp N6  &kp MINUS   &kp PLUS
-       &none         &none         &none         &none         &none    &kp N1  &kp N2   &kp N3  &kp EQUAL  &kp UNDER
-                                   &none         &none         &none     &none  &kp N0  &kp RET
+      &trans        &trans        &trans        &trans        &trans    &kp N1  &kp N2   &kp N3  &kp EQUAL  &kp UNDER
+                                  &trans        &trans        &trans    &trans  &kp N0  &kp RET
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+  &kp TAB    &trans      &trans  &trans  &kp ESC    &trans  &trans  &trans  &trans  &trans
+&kp LSHFT    &trans      &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp LALT    &kp LGUI  &trans   &trans    &trans  &trans  &trans  &trans  &trans
+                     &caps_word  &trans   &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &kp ESC  &trans      &trans    &trans    &kp TAB
+&trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans    &trans  &kp RSHFT
+&trans  &trans  &trans  &trans  &trans     &trans  &trans    &kp LGUI  &kp RALT  &kp RCTRL
+                &trans  &trans  &trans     &trans  &trans  &caps_word
             >;
         };
     };
