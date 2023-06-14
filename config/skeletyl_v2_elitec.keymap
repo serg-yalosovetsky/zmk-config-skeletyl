@@ -110,7 +110,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LCTRL &kp LEFT_SHIFT>;
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_release>;
         };
     };
 
