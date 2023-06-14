@@ -46,6 +46,16 @@
             key-positions = <11 12>;
             bindings = <&kp TAB>;
         };
+
+        new_combo {
+            bindings = <&shiftlang>;
+            key-positions = <20 10>;
+        };
+
+        new_combo {
+            bindings = <&shiftlang>;
+            key-positions = <29 19>;
+        };
     };
 
     behaviors {
@@ -90,6 +100,15 @@
         tri_layer {
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
+        };
+    };
+
+    macros {
+        shiftlang: shiftlang {
+            compatible = "zmk,behavior-macro";
+            label = "SHIFTLANG";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_SHIFT>;
         };
     };
 
