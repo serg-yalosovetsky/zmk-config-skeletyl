@@ -16,7 +16,6 @@
 #define RAISE2   5
 #define LOWLOW   6
 #define RAIRAI   7
-
 #define ADJ ADJUST
 #define LWR LOWER
 #define LWR2 LOWER2
@@ -110,11 +109,12 @@
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
         };
+
         six_layer {
             if-layers = <LOWER LOWER2>;
             then-layer = <LOWLOW>;
         };
-        
+
         seven_layer {
             if-layers = <RAISE RAISE2>;
             then-layer = <RAIRAI>;
@@ -192,10 +192,10 @@
 
         layer_6 {
             bindings = <
-&kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans
-    &trans            &trans      &trans             &trans       &kp C_MUTE    &trans  &trans  &trans  &trans  &trans
-    &trans            &trans      &trans             &trans           &trans    &trans  &trans  &trans  &trans  &trans
-                                  &trans             &trans           &trans    &trans  &trans  &trans
+        &kp C_PREV           &kp C_PLAY_PAUSE         &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans
+      &kp LS(LPAR)  &kp LS(RIGHT_PARENTHESIS)           &kp LBKT  &kp RIGHT_BRACKET       &kp C_MUTE    &trans  &trans  &trans  &trans  &trans
+&kp LS(LEFT_BRACE)                   &kp RBRC  &kp LS(LESS_THAN)   &kp GREATER_THAN         &kp PIPE    &trans  &trans  &trans  &trans  &trans
+                                                          &trans             &trans           &trans    &trans  &trans  &trans
             >;
         };
 
