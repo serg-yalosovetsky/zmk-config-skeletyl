@@ -12,9 +12,18 @@
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
-#define LWR LOWER
-#define RSE RAISE
+#define LOWER2   4
+#define RAISE2   5
+#define LOWLOW   6
+#define RAIRAI   7
+
 #define ADJ ADJUST
+#define LWR LOWER
+#define LWR2 LOWER2
+#define L2 LOWLOW
+#define RSE RAISE
+#define RSE2 RAISE2
+#define R2 RAIRAI
 
 &mt {
     tapping-term-ms = <200>;
@@ -100,6 +109,15 @@
         tri_layer {
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
+        };
+        six_layer {
+            if-layers = <LOWER LOWER2>;
+            then-layer = <LOWLOW>;
+        };
+        
+        seven_layer {
+            if-layers = <RAISE RAISE2>;
+            then-layer = <RAIRAI>;
         };
     };
 
