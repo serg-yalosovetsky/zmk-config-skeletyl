@@ -47,12 +47,12 @@
             bindings = <&kp TAB>;
         };
 
-        new_combo {
+        nextlangleft {
             bindings = <&shiftlang>;
             key-positions = <20 10>;
         };
 
-        new_combo {
+        nexlangright {
             bindings = <&shiftlang>;
             key-positions = <29 19>;
         };
