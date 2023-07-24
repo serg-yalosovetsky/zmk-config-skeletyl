@@ -156,10 +156,10 @@
 
         raise_layer {
             bindings = <
-   &kp F1   &kp F2        &kp F3        &kp F4             &kp F5       &kp F6         &kp F7       &kp F8        &kp F9       &kp F10
-  &kp F11  &kp F12        &trans     &kp GRAVE           &kp AMPS    &kp UNDER      &kp MINUS    &kp EQUAL  &kp RA(LBKT)  &kp RA(RBKT)
-&kp COMMA  &kp DOT  &kp LS(AMPS)       &kp SQT  &kp DOUBLE_QUOTES    &kp RCTRL       &kp PLUS     &kp STAR      &kp BSLH  &kp LS(BSLH)
-                          &trans  &kp LG(LGUI)             &trans       &trans  &kp PAGE_DOWN  &kp PAGE_UP
+       &kp F1            &kp F2     &kp F3        &kp F4             &kp F5       &kp F6         &kp F7       &kp F8          &kp F9          &kp F10
+      &kp F11           &kp F12    &kp DOT     &kp GRAVE           &kp AMPS    &kp UNDER      &kp MINUS    &kp EQUAL  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp LESS_THAN  &kp GREATER_THAN  &kp COMMA       &kp SQT  &kp DOUBLE_QUOTES    &kp RCTRL       &kp PLUS     &kp STAR        &kp BSLH         &kp PIPE
+                                    &trans  &kp LG(LGUI)             &trans       &trans  &kp PAGE_DOWN  &kp PAGE_UP
             >;
         };
 
